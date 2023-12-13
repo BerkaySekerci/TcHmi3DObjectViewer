@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "TcHmi.Controls.F_3DObjectViewer.ObjectViewer3D": {
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "ObjectViewer3D",
+      "frameworkControlNamespace": "TcHmi.Controls.F_3DObjectViewer"
+    }
+  }
+}

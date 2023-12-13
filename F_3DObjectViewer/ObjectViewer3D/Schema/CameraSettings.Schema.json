@@ -1,0 +1,143 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "CameraSettings": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "CameraPosition",
+      "type": "object",
+      "propertiesMeta": [
+        {
+          "name": "PositionX",
+          "category": "CameraPosition",
+          "displayName": "X Position",
+          "displayPriority": 10,
+          "description": "X position of the camera.",
+          "defaultValue": 0,
+          "defaultValueInternal": 0
+        },
+        {
+          "name": "PositionY",
+          "category": "CameraPosition",
+          "displayName": "Y Position",
+          "displayPriority": 10,
+          "description": "Y position of the camera.",
+          "defaultValue": 0,
+          "defaultValueInternal": 0
+        },
+        {
+          "name": "PositionZ",
+          "category": "CameraPosition",
+          "displayName": "Z Position",
+          "displayPriority": 10,
+          "description": "Z position of the camera.",
+          "defaultValue": 200,
+          "defaultValueInternal": 200
+        }
+      ],
+      "properties": {
+        "PositionX": {
+          "type": "integer"
+        },
+        "PositionY": {
+          "type": "integer"
+        },
+        "PositionZ": {
+          "type": "integer"
+        }
+      },
+      "required": [ "PositionX", "PositionY", "PositionZ" ]
+    },
+    "RenderingSettings": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "RenderingSettings",
+      "type": "object",
+      "propertiesMeta": [
+        {
+          "name": "FOV",
+          "category": "RenderingSettings",
+          "displayName": "FOV",
+          "displayPriority": 10,
+          "description": "Camera frustum vertical field of view.",
+          "defaultValue": 50,
+          "defaultValueInternal": 50
+        },
+        {
+          "name": "Near",
+          "category": "RenderingSettings",
+          "displayName": "Near",
+          "displayPriority": 10,
+          "description": "Camera frustum near plane.",
+          "defaultValue": 1,
+          "defaultValueInternal": 1
+        },
+        {
+          "name": "Far",
+          "category": "RenderingSettings",
+          "displayName": "Far",
+          "displayPriority": 10,
+          "description": "Camera frustum far plane.",
+          "defaultValue": 100000,
+          "defaultValueInternal": 100000
+        }
+      ],
+      "properties": {
+        "FOV": {
+          "type": "number"
+        },
+        "Near": {
+          "type": "number"
+        },
+        "Far": {
+          "type": "number"
+        }
+      },
+      "required": [ "FOV", "Near", "Far" ]
+    },
+    "TargetPositions": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "TargetPositions",
+      "type": "object",
+      "propertiesMeta": [
+        {
+          "name": "TargetX",
+          "category": "TargetPositions",
+          "displayName": "Target X Position",
+          "displayPriority": 10,
+          "description": "Target X Position.",
+          "defaultValue": 0,
+          "defaultValueInternal": 0
+        },
+        {
+          "name": "TargetY",
+          "category": "TargetPositions",
+          "displayName": "Target Y Position",
+          "displayPriority": 10,
+          "description": "Target Y Position.",
+          "defaultValue": 0,
+          "defaultValueInternal": 0
+        },
+        {
+          "name": "TargetZ",
+          "category": "TargetPositions",
+          "displayName": "Target Z Position",
+          "displayPriority": 10,
+          "description": "Target Z Position.",
+          "defaultValue": 0,
+          "defaultValueInternal": 0
+        }
+      ],
+      "properties": {
+        "TargetX": {
+          "type": "number"
+        },
+        "TargetY": {
+          "type": "number"
+        },
+        "TargetZ": {
+          "type": "number"
+        }
+      },
+      "required": [ "TargetX", "TargetY", "TargetZ" ]
+    }
+  }
+}
